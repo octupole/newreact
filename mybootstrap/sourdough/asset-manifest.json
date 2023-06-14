@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b4651850.chunk.css",
+    "main.js": "/static/js/main.95f5631f.chunk.js",
+    "main.js.map": "/static/js/main.95f5631f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3d2cf539.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3d2cf539.js.map",
+    "static/js/2.1a7aa3bc.chunk.js": "/static/js/2.1a7aa3bc.chunk.js",
+    "static/js/2.1a7aa3bc.chunk.js.map": "/static/js/2.1a7aa3bc.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7fd7cef6c37ee264681714d234b1475e.js": "/precache-manifest.7fd7cef6c37ee264681714d234b1475e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b4651850.chunk.css.map": "/static/css/main.b4651850.chunk.css.map",
+    "static/js/2.1a7aa3bc.chunk.js.LICENSE.txt": "/static/js/2.1a7aa3bc.chunk.js.LICENSE.txt",
+    "static/media/theperfectloaf.jpg": "/static/media/theperfectloaf.4b4447a8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d2cf539.js",
+    "static/js/2.1a7aa3bc.chunk.js",
+    "static/css/main.b4651850.chunk.css",
+    "static/js/main.95f5631f.chunk.js"
+  ]
+}
