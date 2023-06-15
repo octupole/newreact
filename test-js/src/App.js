@@ -1,54 +1,41 @@
 import React, { useState } from 'react';
 import {
+  NavLink,
   Nav,
   NavItem,
-  Dropdown,
-  DropdownItem,
-  DropdownToggle,
-  DropdownMenu,
-  NavLink,
 } from 'reactstrap';
+import {
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Layout from './Layout/Layouts';
-
+import Layout from './Layout/Layout';
+import MyTest from './components/MyTest';
+import Home from './components/Home';
 const App= (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
     <Layout>
     <Nav tabs>
       <NavItem>
-        <NavLink href="#" active>
-          Link
+        <NavLink href="/" >
+          Home
         </NavLink>
       </NavItem>
-      <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-        <DropdownToggle nav caret>
-          Dropdown
-        </DropdownToggle>
-        <DropdownMenu>
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem disabled>Action</DropdownItem>
-          <DropdownItem>Another Action</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Another Action</DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href="#">Another Link</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink disabled href="#">
-          Disabled Link
-        </NavLink>
+        <NavLink href="/mytest" >Test</NavLink>
       </NavItem>
     </Nav>
+    <Routes>
+        <Route path="/" element={<Home />}/>        
+        <Route path="/mytest" element={<MyTest/>} />
+    </Routes>
+    
     </Layout>
   );
 }
