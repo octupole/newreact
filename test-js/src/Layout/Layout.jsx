@@ -1,5 +1,5 @@
 import React from 'react';
-import bgimage from '../Assets/images/theperfectloaf.jpg';
+import bgimage from '../Assets/images/cool-background_black.png';
 import { Container } from 'reactstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,15 +16,15 @@ const styleImg={
     opacity: '0.8',
     backgroundImage: "url("+bgimage+")",
     height: 'cover',
-    color: 'black',
-    textShadow: '10px 10px 10px white'
+    color: 'white',
+    textShadow: '10px 10px 10px grey'
   }
 const Layout = ( props ) => (
     <>
     <div style={styleImg}>
       <Container>
-    <h1 className="text-center"><b>Lievito Madre</b></h1><br/>
-    <h2 className="text-center"><b>Calcolo Ingredienti e Ricette</b></h2>    
+    <h1 className="text-center"><b>My React Web Site</b></h1>
+    <h2 className="text-center"><b>This is Just a Test</b></h2><br/>    
     </Container>
     </div>
     <Container>{props.children}</Container>
