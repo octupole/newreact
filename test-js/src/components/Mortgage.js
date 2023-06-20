@@ -104,7 +104,6 @@ const Mortgage = (props) => {
       
       <FormGroup>
       <Form>
-        <InputGroup>
         <Row>
           <Col md={4}>
             <FormGroup>
@@ -150,7 +149,6 @@ const Mortgage = (props) => {
           </Col>
             <ErrorModal invalid={errors.invalid} message={errors.message} />
         </Row>
-        </InputGroup>
         <FormGroup>
           <Label for="monthlyPayment">Monthly Payment</Label>
           <Input

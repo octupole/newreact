@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-    FormFeedback,
-    Input
-  } from "reactstrap";
+import {Alert} from "reactstrap";
   import "bootstrap/dist/css/bootstrap.min.css";
   
 const ErrorModal = (props) => {
@@ -10,8 +7,7 @@ const ErrorModal = (props) => {
         console.log(props.invalid);
         return (
     <>
-    <Input invalid hidden/>
-    <FormFeedback >{props.message}</FormFeedback>
+    <Alert color="danger">{props.message}</Alert>
     </>    
   )
     } else{
